@@ -1,6 +1,5 @@
 import sys
 
-from src.simpleCrawler import SimpleCrawler
 from src.zipfCrawler import ZipfCrawler
 
 if __name__ == '__main__':
