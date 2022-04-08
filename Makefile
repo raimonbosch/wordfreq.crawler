@@ -19,9 +19,3 @@ up:
 	docker-compose build
 	docker-compose up -d
 
-
-shell:
-	docker-compose exec scrapper-seo bash
-
-down:
-	docker-compose scrapper-seo down
