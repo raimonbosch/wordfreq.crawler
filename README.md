@@ -5,4 +5,5 @@ The application will find the first occurrence of a word in a website. To do so,
 
 ## How to run
 make up
+
 bin/crawler [Starting url] [Word to find] [two code language] [number of threads]
