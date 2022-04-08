@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Absolute path to this script, e.g. /home/user/bin/foo.sh
+export SCRIPT=$(readlink -f "$0")
+# Absolute path this script is in, thus /home/user/bin
+export FOLDERPATH=$(dirname "$SCRIPT")
+
+python3 $FOLDERPATH/../main.py $1 $2 $3 $4

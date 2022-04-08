@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  scrapper-seo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /var/www
+    volumes:
+      - .:/var/www:cached
+    networks:
+      - scrapper-network
+    command:
+      tail -f /dev/null
+
+
+networks:
+  scrapper-network:
+    driver: bridge
